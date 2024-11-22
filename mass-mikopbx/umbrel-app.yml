@@ -1,8 +1,8 @@
 manifestVersion: 1
-id: mikopbx
+id: mass-mikopbx
 name: MikoPBX
 tagline: The Ultimate Open-Source PBX System
-icon: https://www.mikopbx.com/upload/resize_cache/medialibrary/37e/800_600_1/37e9922975497eac5345544c88c309d4.png
+icon: https://storage.yandexcloud.net/products/f2ea7uokcu9q8kil94av.svg
 category: Communication
 version: "1.0.0"
 port: 8080
@@ -12,7 +12,7 @@ description: >-
 developer: MikoPBX Team
 website: https://mikopbx.com
 submitter: Massimo De Matteis
-submission: https://github.com/yourusername/mikopbx-umbrel-app
+submission: https://github.com/mikopbx
 repo: https://github.com/mikopbx
 support: https://github.com/mikopbx/Core/issues
 gallery:

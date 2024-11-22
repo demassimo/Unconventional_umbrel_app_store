@@ -12,6 +12,8 @@ services:
     image: ghcr.io/mikopbx/mikopbx-x86-64
     network_mode: host
     entrypoint: /sbin/docker-entrypoint
+    user: "1000:1000"
+    init: true
     volumes:
       - ./data/cf:/cf
       - ./data/storage:/storage
