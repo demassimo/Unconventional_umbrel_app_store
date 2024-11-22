@@ -12,6 +12,8 @@ services:
     entrypoint: /sbin/docker-entrypoint
     init: true
     tty: true
+    ports:
+      - "5060:5060"
     volumes:
       - ${APP_DATA_DIR}/data/cf:/cf
       - ${APP_DATA_DIR}/data/storage:/storage
