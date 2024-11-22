@@ -4,7 +4,7 @@ name: MikoPBX
 tagline: The Ultimate Open-Source PBX System
 icon: https://storage.yandexcloud.net/products/f2ea7uokcu9q8kil94av.svg
 category: Communication
-version: "1.0.1"
+version: "1.0.2"
 port: 2165
 description: >-
   MikoPBX is a powerful and flexible private branch exchange (PBX) system that allows you to manage your communications securely and efficiently.
@@ -20,7 +20,7 @@ gallery:
   - https://www.mikopbx.com/upload/resize_cache/medialibrary/b99/800_600_1/b992326df04e7c4f6ef60a0b2ba3defd.png
   - https://www.mikopbx.com/upload/resize_cache/medialibrary/782/800_600_1/78214124a4177527e13ef4fd6448dcd4.png
 releaseNotes: >-
-  Initial release of MikoPBX for Umbrel.
+  Fix of volumes.
 dependencies: []
 path: ""
 defaultUsername: "admin"
