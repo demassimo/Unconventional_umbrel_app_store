@@ -4,22 +4,22 @@ services:
 
   app_proxy:
     environment:
-      # The format here is: <app-id>_<docker-service-name>_1
       APP_HOST: mass-mikopbx_server_1
       APP_PORT: 2165
 
   server:
     image: ghcr.io/mikopbx/mikopbx-x86-64
     entrypoint: /sbin/docker-entrypoint
-    user: "1000:1000"
     init: true
-    volumes:
-      - ./data/cf:/cf
-      - ./data/storage:/storage
     tty: true
+    volumes:
+      - ${APP_DATA_DIR}/data/cf:/cf
+      - ${APP_DATA_DIR}/data/storage:/storage
     environment:
-      - ID_WWW_USER=${ID_WWW_USER}
-      - ID_WWW_GROUP=${ID_WWW_GROUP}
+      - PUID=1000
+      - PGID=1000
+      - ID_WWW_USER=1000
+      - ID_WWW_GROUP=1000
       - PBX_NAME=MikoPBXFirst
       - PBX_FIREWALL_ENABLED=0
       - PBX_FAIL2BAN_ENABLED=0
