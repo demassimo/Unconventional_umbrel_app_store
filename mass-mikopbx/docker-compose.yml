@@ -5,14 +5,13 @@ services:
   app_proxy:
     environment:
       # The format here is: <app-id>_<docker-service-name>_1
-      APP_HOST: mikopbx-mikopbx_1
-      APP_PORT: 8080
+      APP_HOST: mass-mikopbx_server_1
+      APP_PORT: 2165
 
-  mikopbx:
+  server:
     image: ghcr.io/mikopbx/mikopbx-x86-64
-    network_mode: "host"
-    entrypoint: "/sbin/docker-entrypoint"
-    hostname: "mikopbx-in-docker-first"
+    network_mode: host
+    entrypoint: /sbin/docker-entrypoint
     volumes:
       - ./data/cf:/cf
       - ./data/storage:/storage
@@ -24,7 +23,7 @@ services:
       - PBX_FIREWALL_ENABLED=0
       - PBX_FAIL2BAN_ENABLED=0
       - SSH_PORT=123
-      - WEB_PORT=8080
+      - WEB_PORT=2165
       - WEB_HTTPS_PORT=8443
       - SIP_PORT=5060
       - TLS_PORT=5061
