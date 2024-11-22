@@ -2,9 +2,9 @@ manifestVersion: 1
 id: mass-gameap
 name: GameAP
 tagline: An open-source game servers management panel
-icon: https://raw.githubusercontent.com/gameap/gameap-docs/master/img/logo.svg
+icon: https://gameap.com/assets/gameap-dWs7aazw.png
 category: Gaming
-version: "1.0.0"
+version: "1.0.1"
 port: 8000
 description: >-
   GameAP is an open-source game servers management panel that allows you to manage and monitor game servers with ease.
