@@ -8,6 +8,7 @@ version: "1.0.3"
 port: 2165
 description: >-
   MikoPBX is a powerful and flexible private branch exchange (PBX) system that allows you to manage your communications securely and efficiently.
+  Please note this app takes long to start due to it being a full pbx system
 
 developer: MikoPBX Team
 website: https://mikopbx.com
