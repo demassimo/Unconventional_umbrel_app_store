@@ -1,17 +1,35 @@
-## Umbrel Community App Store Template
+# Unconventional App Store
 
-This repository is a template to create an Umbrel Community App Store. These additional app stores allow developers to distribute applications without submitting to the [Official Umbrel App Store](https://github.com/getumbrel/umbrel-apps).
+Welcome to the **Unconventional App Store**! 🎉
 
-## How to use:
+As the name suggests, this app store is a collection of applications that you won't typically find in the community app store. We focus on bringing unique, creative, and unconventional tools to your fingertips.
 
-1. Start by clicking the "Use this template" button located above.
-2. Assign an ID and name to your app store within the `umbrel-app-store.yml` file. This file specifies two important attributes:
-    - `id` - Acts as a unique prefix for every app within your Community App Store. You must start your application's ID with your app store's ID. For instance, in this template, the app store ID is `sparkles`, and there's an app named `hello world`. Consequently, the app's ID should be: `sparkles-hello-world`.
-    - `name` - This is the name of the Community App Store displayed in the umbrelOS UI.
-3. Change the name of the `sparkles-hello-world` folder to match your app's ID. The app ID is for you to decide. For example, if your app store ID is `whistles`, and your app is named My Video Downloader, you could set its app ID to `whistles-my-video-downloader`, and rename the folder accordingly.
-4. Next, enter your app's listing details in the `whistles-my-video-downloader/umbrel-app.yml`. These are displayed in the umbrelOS UI.
-5. Include the necessary Docker services in `whistles-my-video-downloader/docker-compose.yml`.
-6. That's it! Your Community App Store, featuring your unique app, is now set up and ready to go. To use your Community App Store, you can add its GitHub url the umbrelOS user interface as shown in the following demo:
+## What Makes Us Different?
 
+The Unconventional App Store is your gateway to exploring apps that break the mold. From **PBX systems** to **game servers** and beyond, we provide access to a variety of innovative tools that cater to niche interests and specialized use cases.
 
-https://user-images.githubusercontent.com/10330103/197889452-e5cd7e96-3233-4a09-b475-94b754adc7a3.mp4
+## Features
+
+- **Diverse Selection**: Discover apps that aren't available in the mainstream community app store.
+- **Focus on Innovation**: Highlighting creative and non-traditional applications.
+- **Community-Driven**: Built for enthusiasts and experts looking for something extraordinary.
+
+## Examples of Available Apps
+
+- **PBX Systems**: Simplify and enhance your communication setups with powerful private branch exchange solutions.
+- **Game Servers**: Host and manage your favorite multiplayer games with ease.
+- **More to Come**: We're constantly expanding our catalog with apps you never knew you needed.
+
+## Get Started
+
+1. Install the Unconventional App Store on your Umbrel instance.
+2. Browse our unique selection of apps.
+3. Install and enjoy the power of unconventional technology!
+
+## Feedback and Suggestions
+
+Got an idea for an app that belongs here? Found a bug? We’d love to hear from you! Open an issue or submit a pull request on our GitHub repository.
+
+---
+
+Take a step off the beaten path and embrace the unconventional. 🌟
