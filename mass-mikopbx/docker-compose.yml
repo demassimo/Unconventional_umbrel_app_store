@@ -22,7 +22,7 @@ services:
       - PGID=1000
       - ID_WWW_USER=1000
       - ID_WWW_GROUP=1000
-      - PBX_NAME=UmbrelMikoPBX
+      - PBX_NAME=Umbrel MikoPBX
       - PBX_FIREWALL_ENABLED=0
       - PBX_FAIL2BAN_ENABLED=0
       - SSH_PORT=123
