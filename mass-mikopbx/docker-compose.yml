@@ -14,6 +14,14 @@ services:
     tty: true
     ports:
       - "5060:5060"
+      - "8443:8443"
+      - "10000-10800:10000-10800"
+      - "4569:4569"
+      - "5038:5038"
+      - "8088:8088"
+      - "4229:4229"
+      - "6379:6379"
+      - "4223:4223"
     volumes:
       - ${APP_DATA_DIR}/data/cf:/cf
       - ${APP_DATA_DIR}/data/storage:/storage
