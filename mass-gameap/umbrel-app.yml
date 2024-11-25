@@ -4,7 +4,7 @@ name: GameAP
 tagline: An open-source game servers management panel
 icon: https://gameap.com/assets/gameap-dWs7aazw.png
 category: Gaming
-version: "1.0.1"
+version: "1.0.2"
 port: 8000
 description: >-
   GameAP is an open-source game servers management panel that allows you to manage and monitor game servers with ease.
@@ -20,7 +20,7 @@ gallery:
   - https://gameap.ru/screenshots/en-main-panel.png
   - https://gameap.ru/screenshots/en-games.png
 releaseNotes: >-
-  Initial release of GameAP for Umbrel. Set up game servers and manage them directly from your Umbrel node.
+  db fix.
 dependencies: []
 path: ""
 defaultUsername: "admin"
