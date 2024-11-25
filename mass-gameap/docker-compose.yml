@@ -20,8 +20,6 @@ services:
         DB_DATABASE: gameap
         DB_USERNAME: gameap
         DB_PASSWORD: gameap
-    ports:
-      - "8000:8000"
     depends_on:
           - db
   db:
