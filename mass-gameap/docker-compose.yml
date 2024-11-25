@@ -4,14 +4,14 @@ services:
   app_proxy:
     environment:
       # The format here is: <app-id>_<docker-service-name>_1
-      APP_HOST: mass-rust-server_server_1
+      APP_HOST: mass-gameap_server_1
       APP_PORT: 8000
 
   server:
     image: gameap/gameap
     restart: always
     volumes:
-        - ${APP_DATA_DIR}/data/gameap-certs:/var/www/gameap/storage/app/certs
+        - ${APP_DATA_DIR}/data/gameap-storage:/var/www/gameap/storage
     environment:
         ADMIN_PASSWORD: fpwPOuZD
         APP_LANG: en
