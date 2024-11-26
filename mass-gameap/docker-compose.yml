@@ -7,23 +7,23 @@ services:
       APP_PORT: 8000
 
   server:
-    image: gameap/gameap
+    image: gameap/gameap:latest
     volumes:
       - ./data/gameap-storage:/var/www/gameap/storage
     environment:
       ADMIN_PASSWORD: fpwPOuZD
       APP_LANG: en
+      APP_URL: 0.0.0.0:8000
       DB_CONNECTION: mysql
       DB_HOST: dbgameap
       DB_DATABASE: gameap
       DB_USERNAME: gameap
       DB_PASSWORD: gameap
     depends_on:
-      db:
-        condition: service_healthy
+      - dbgameap
 
   dbgameap:
-    image: mysql
+    image: mysql:8.0
     environment:
       MYSQL_ROOT_PASSWORD: rootpass
       MYSQL_DATABASE: gameap
@@ -31,3 +31,8 @@ services:
       MYSQL_PASSWORD: gameap
     volumes:
       - ./data/db:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
